@@ -298,7 +298,15 @@ session.load()
 laps = session.laps
 telemetry = laps.pick_driver('VER').get_telemetry()
             """)
-        
+
+        # Esempio integrazione FastF1 per telemetria
+import fastf1
+
+session = fastf1.get_session(2024, 'Monza', 'R')
+session.load()
+laps = session.laps
+telemetry = laps.pick_driver('VER').get_telemetry()
+            
         # Dati raw
         with st.expander("📋 Visualizza Dati Raw"):
             st.dataframe(df_laps.head(100), use_container_width=True)
