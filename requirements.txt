@@ -3,3 +3,4 @@ pandas>=2.2
 plotly>=5.18
 requests>=2.31
 numpy>=1.26
+fastf1==3.3.0
